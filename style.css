@@ -141,12 +141,30 @@ h2{
 }
 
 .service__detail {
-    background: url(./img/Service01.png) no-repeat center/cover;
+    /* background: url(./img/Service01.png) no-repeat center/cover; */
     width: 100%;  /* Ensure it takes up full width in the grid */
     height: 300px;
 	display: flex;
 	justify-content: center;
 	border-radius: 0.5rem;
+}
+.detail1{
+	background: url(./img/Service01.png) no-repeat center/cover;
+}
+.detail2{
+	background: url(./img/Service02.png) no-repeat center/cover;
+}
+.detail3{
+	background: url(./img/Service03.png) no-repeat center/cover;
+}
+.detail4{
+	background: url(./img/Service04.png) no-repeat center/cover;
+}
+.detail5{
+	background: url(./img/Service05.png) no-repeat center/cover;
+}
+.detail6{
+	background: url(./img/Service06.png) no-repeat center/cover;
 }
 /* card text */
 p.service__name{
