@@ -19,7 +19,12 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* colcor varialvel */
+/* font face */
+@font-face {
+	font-family: new font;
+	src: url(./font/Li\ Abu\ J\ M\ Akkas\ Unicode.ttf);
+  }
+/* color variable */
 :root{
 	--primary-color: #00C2A0;
 	--title-color: #020817;
@@ -55,7 +60,8 @@ table {
 }
 /* Start main css style */
 h1, h2, h2, h4, p{
-    font-family: "Anek Bangla", sans-serif;
+    /* font-family: "Anek Bangla", sans-serif; */
+	font-family: new font;
   }
 h1{
     font-size:3.75rem;
@@ -73,6 +79,7 @@ h2{
 	text-align: center;
 	padding: 1rem 0rem;
 	/* margin: 1rem; */
+	color: var(--title-color);
 }
 .hero{
 	background-image: url(./img/hero__background.png);
