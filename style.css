@@ -1,0 +1,255 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* colcor varialvel */
+:root{
+	--primary-color: #00C2A0;
+	--title-color: #020817;
+	--point-color: #6D6D6D;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	background-color: #F0F4F9;
+}
+a{
+	text-decoration: none;
+	color: var(--title-color);
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Start main css style */
+h1, h2, h2, h4, p{
+    font-family: "Anek Bangla", sans-serif;
+  }
+h1{
+    font-size:3.75rem;
+    font-weight: bold;
+    color: #fff;
+	width: 37rem;
+	text-align: center;
+	line-height: 1.5;
+	margin-top: 24px;
+}
+h2{
+	font-size: 2.5rem;
+	font-weight: 600;
+	line-height: 2.5rem;
+	text-align: center;
+	padding: 1rem 0rem;
+	/* margin: 1rem; */
+}
+.hero{
+	background-image: url(./img/hero__background.png);
+	background-size: cover; /* Scales the image to fill the container */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+	max-height: max-content;
+	justify-items: center;
+	padding: 60px 0px;
+	margin-bottom: 2.5rem;
+}
+.hero__container{
+	justify-items: center;
+	padding: 0px 24px ;
+	margin: 0px 66.5px;}
+.hero__logo{
+	margin: 16px 0px;
+}
+.hero__paragraph{
+	font-size: 1.875rem;
+	color: #fff;
+	display: block;
+}
+.hero__point{
+	display: flex;
+	flex-direction: row;
+	gap: 6px;
+	padding: 12px;
+	margin-top: 12px;
+	background-color: rgba(0, 0, 0, 0.4); 
+	border-radius: 0.5rem;
+}
+.hero__counter{
+	color: var(--primary-color);
+	font-size: 1.5rem;
+	line-height: 2rem;
+	font-weight: bold;
+	margin-top: 24px;
+}
+.hero__features{
+	margin-top: 24px;
+}
+/* service card */
+.service{
+	justify-content: center;
+	margin-bottom: 2.5rem;
+}
+.service__container{
+	max-width: 985px;
+	margin: auto;
+}
+.service__card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
+    grid-template-rows: repeat(2, 1fr); /* Creates 2 equal rows */
+    gap: 1.5rem;
+    padding: 1rem;
+	margin-top: 1.5rem;
+}
+
+.service__detail {
+    background: url(./img/Service01.png) no-repeat center/cover;
+    width: 100%;  /* Ensure it takes up full width in the grid */
+    height: 300px;
+	display: flex;
+	justify-content: center;
+	border-radius: 0.5rem;
+}
+/* card text */
+p.service__name{
+	font-size: 1.7rem;
+	line-height: 2rem;
+	font-weight: bold;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.4);
+	text-align: center;
+	align-self: center;
+	width: 100%;
+	padding: 18px 0px;
+}
+h2+p{
+	text-align: center;
+}
+/* benefit section */
+.benefit__container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	max-width: 985px;
+	margin: auto;
+}
+.benefit__img{
+	margin: 2rem 0rem 6rem 0rem;
+}
+.benefit__box__container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	width: 100%;
+	margin: 20px;
+}
+.benefit__text{
+	font-size: 1.7rem;
+	line-height: 2rem;
+	font-weight: 500;
+	text-align: center;
+}
+.benefit__box{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	align-items: center;
+}
+/* benefit button style */
+.btn{
+	padding: 22px 64px;
+	font-size: 1.7rem;
+	font-weight: bold;
+	background-color: var(--primary-color) ;
+	color: white;
+	border-radius: 0.5rem;
+	margin: 1.5rem 0rem 3.5rem 0rem;
+
+}
+/* app section */
+.app{
+	width: 100%;
+}
+.app__content{
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	border-radius: 1rem;
+	max-width: 985px;
+	margin: auto;
+	margin-top: 2rem;
+}
+.app__details{
+	width: 100%;
+	padding: 2rem 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+
+}
+h3{
+	font-size: 2rem;
+	line-height: 2.25rem;
+	font-weight: 600;
+}
+img+p{
+	font-size: 20px;
+	color: var(--point-color);
+
+}
+.app__point > li{
+	display: flex;
+	gap: 6px;
+	margin: 1rem 0rem;
+}
+.app__link{
+	margin-top: 1.5rem;
+	display: flex;
+	gap: 1rem;
+}
+/* Footer section */
+.footer{
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	padding: 2rem;
+	margin-top: 4rem;;
+}
+.footer__container{
+	text-align: center;
+	padding: 2rem 0rem;
+}
